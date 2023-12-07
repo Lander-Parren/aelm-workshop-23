@@ -19,7 +19,7 @@ jobs:
           go-version: '1.17'
 
       - name: Build Go application
-        run: go build -o app ../../workshop-services/main.go
+        run: go build -o app ./workshop-services/main.go
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
