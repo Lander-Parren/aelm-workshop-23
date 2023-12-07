@@ -32,7 +32,7 @@ jobs:
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
       - name: Build Docker image
-        run: docker build -t DOCKERHUB_USERNAME/aelm-workshop-23 .
+        run: docker build -t DOCKERHUB_USERNAME/ .
 
       - name: Push Docker image
-        run: docker push DOCKERHUB_USERNAME/aelm-workshop-23
+        run: docker push DOCKERHUB_USERNAME/
